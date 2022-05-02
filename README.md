@@ -21,9 +21,10 @@
 
 Τα υλικά που χρησιμοποιήσαμε για το project είναι τα παρακάτω:
 
--   Wemos Lolin32
+-   [Wemos Lolin32](https://www.wemos.cc/en/latest/d32/d32.html)
 
--   Relay module
+-   [Relay
+    module](https://elearn.ellak.gr/mod/book/view.php?id=4568&chapterid=2440)
 
 -   LED
 
@@ -31,7 +32,8 @@
 
 -   Προγραμματισμός του Wemos Lolin32 με το [Arduino IDE](Arduino%20IDE)
 
--   
+-   Προγραμματισμός της εφαρμογής με το [MIT
+    AppInventor](https://appinventor.mit.edu/)
 
 # Περίοδος υλοποίησης
 
