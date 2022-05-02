@@ -24,6 +24,7 @@ void setup() {
     delay(500);
     Serial.print(".");
   }
+  Serial.println();
   Serial.println("Συνδέθηκε στο WiFi.");
    
   server.begin();
@@ -43,15 +44,15 @@ void loop() {
     return;   // Αν δεν έχει συνδεθεί η εφαρμογή δεν εκτελείται ο κώδικας που βρίσκεται παρακάτω
   }
    
-  Serial.print("Σύνδεσης της εφαρμογής από τη διεύθυνση: ");
+  Serial.print("Σύνδεση εφαρμογής από τη διεύθυνση: ");
   Serial.println(client.remoteIP());
    
-  String req = client.readStringUntil('\r');  // Ανάγνωση της εισόδου που έστειλε η εφαρμογή
+  String req = client.readStringUntil('\r');  // Ανάγνωση της εισόδου (πατημα κουμπιού) που έστειλε η εφαρμογή
   Serial.println(req);
 
   // Ανάλογα με την είσοδο εκτελείται η αντίστοιχη ενέργεια
   if (req.indexOf("ledon") != -1) {
-    digitalWrite(, HIGH);
+    digitalWrite(LED, HIGH);
     info = "LED ON";
   }
   if (req.indexOf("ledoff") != -1) {
